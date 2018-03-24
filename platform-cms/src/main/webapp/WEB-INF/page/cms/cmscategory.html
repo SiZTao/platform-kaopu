@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    #parse("sys/header.html")
+</head>
+<body>
+<div id="rrapp" v-cloak>
+	<div v-show="showList">
+        <Row :gutter="16">
+            <i-col span="4">
+                <i-input v-model="q.name" @on-enter="query" placeholder="名称"/>
+            </i-col>
+            <i-button @click="query">查询</i-button>
+			#if($shiro.hasPermission("cmscategory:save"))
+            <i-button type="info" @click="add"><i class="fa fa-plus"></i>&nbsp;新增</i-button>
+			#end
+			#if($shiro.hasPermission("cmscategory:update"))
+            <i-button type="warning" @click="update"><i class="fa fa-pencil-square-o"></i>&nbsp;修改</i-button>
+			#end
+			#if($shiro.hasPermission("cmscategory:delete"))
+            <i-button type="error" @click="del"><i class="fa fa-trash-o"></i>&nbsp;删除</i-button>
+			#end
+        </Row>
+	    <table id="jqGrid"></table>
+	    <div id="jqGridPager"></div>
+    </div>
+
+    <Card v-show="!showList">
+        <p slot="title">{{title}}</p>
+		<i-form ref="formValidate" :model="cmsCategory" :rules="ruleValidate" :label-width="80">
+            <Form-item label="栏目名称" prop="name">
+                <i-input v-model="cmsCategory.name" placeholder="栏目名称"/>
+            </Form-item>
+            <Form-item label="链接" prop="href">
+                <i-input v-model="cmsCategory.href" placeholder="链接"/>
+            </Form-item>
+            <Form-item label="" prop="isShow">
+                <i-input v-model="cmsCategory.isShow" placeholder=""/>
+            </Form-item>
+            <Form-item label="" prop="status">
+                <i-input v-model="cmsCategory.status" placeholder=""/>
+            </Form-item>
+            <Form-item label="" prop="remark">
+                <i-input v-model="cmsCategory.remark" placeholder=""/>
+            </Form-item>
+            <Form-item label="" prop="createUserId">
+                <i-input v-model="cmsCategory.createUserId" placeholder=""/>
+            </Form-item>
+            <Form-item label="" prop="createTime">
+                <i-input v-model="cmsCategory.createTime" placeholder=""/>
+            </Form-item>
+            <Form-item label="" prop="totalnum">
+                <i-input v-model="cmsCategory.totalnum" placeholder=""/>
+            </Form-item>
+            <Form-item label="" prop="parentId">
+                <i-input v-model="cmsCategory.parentId" placeholder=""/>
+            </Form-item>
+            <Form-item>
+                <i-button type="primary" @click="handleSubmit('formValidate')">提交</i-button>
+                <i-button type="warning" @click="reload" style="margin-left: 8px"/>返回</i-button>
+                <i-button type="ghost" @click="handleReset('formValidate')" style="margin-left: 8px">重置</i-button>
+            </Form-item>
+        </i-form>
+	</Card>
+</div>
+
+<script src="${rc.contextPath}/js/cms/cmscategory.js?_${date.systemTime}"></script>
+</body>
+</html>

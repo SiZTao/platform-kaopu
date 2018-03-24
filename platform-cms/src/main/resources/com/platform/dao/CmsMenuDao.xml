@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.platform.dao.CmsMenuDao">
+
+    <resultMap type="com.platform.entity.CmsMenuEntity" id="cmsMenuMap">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="menu" column="menu"/>
+        <result property="href" column="href"/>
+        <result property="status" column="status"/>
+    </resultMap>
+
+	<select id="queryObject" resultType="com.platform.entity.CmsMenuEntity">
+		select
+			`id`,
+			`name`,
+			`menu`,
+			`href`,
+			`status`
+		from cms_menu
+		where id = #{id}
+	</select>
+
+	<select id="queryList" resultType="com.platform.entity.CmsMenuEntity">
+		select
+    		`id`,
+    		`name`,
+    		`menu`,
+    		`href`,
+    		`status`
+		from cms_menu
+		WHERE 1=1
+		<if test="name != null and name.trim() != ''">
+			AND name LIKE concat('%',#{name},'%')
+		</if>
+        <choose>
+            <when test="sidx != null and sidx.trim() != ''">
+                order by ${sidx} ${order}
+            </when>
+			<otherwise>
+                order by id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="queryTotal" resultType="int">
+		select count(*) from cms_menu
+		WHERE 1=1
+        <if test="name != null and name.trim() != ''">
+            AND name LIKE concat('%',#{name},'%')
+        </if>
+	</select>
+	 
+	<insert id="save" parameterType="com.platform.entity.CmsMenuEntity" useGeneratedKeys="true" keyProperty="id">
+		insert into cms_menu(
+			`name`,
+			`menu`,
+			`href`,
+			`status`)
+		values(
+			#{name},
+			#{menu},
+			#{href},
+			#{status})
+	</insert>
+	 
+	<update id="update" parameterType="com.platform.entity.CmsMenuEntity">
+		update cms_menu 
+		<set>
+			<if test="name != null">`name` = #{name}, </if>
+			<if test="menu != null">`menu` = #{menu}, </if>
+			<if test="href != null">`href` = #{href}, </if>
+			<if test="status != null">`status` = #{status}</if>
+		</set>
+		where id = #{id}
+	</update>
+	
+	<delete id="delete">
+		delete from cms_menu where id = #{value}
+	</delete>
+	
+	<delete id="deleteBatch">
+		delete from cms_menu where id in 
+		<foreach item="id" collection="array" open="(" separator="," close=")">
+			#{id}
+		</foreach>
+	</delete>
+
+</mapper>
