@@ -16,8 +16,8 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * 权限(Token)验证
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017-03-23 15:38
  */
 @Component

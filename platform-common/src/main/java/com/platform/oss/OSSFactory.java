@@ -8,8 +8,8 @@ import com.platform.utils.SpringContextUtils;
 /**
  * 文件上传Factory
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017-03-26 10:18
  */
 public final class OSSFactory {

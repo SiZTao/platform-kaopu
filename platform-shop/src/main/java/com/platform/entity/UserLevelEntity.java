@@ -7,8 +7,8 @@ import java.io.Serializable;
  * 实体
  * 表名 nideshop_user_level
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017-08-16 16:52:22
  */
 public class UserLevelEntity implements Serializable {

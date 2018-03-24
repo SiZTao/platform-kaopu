@@ -8,8 +8,8 @@ import java.math.BigDecimal;
  * 商品搭配减实体
  * 表名 nideshop_goods_crash
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017-08-30 19:38:48
  */
 public class GoodsCrashVo implements Serializable {

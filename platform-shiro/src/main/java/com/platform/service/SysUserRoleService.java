@@ -6,8 +6,8 @@ import java.util.List;
 /**
  * 用户与角色对应关系
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2016年9月18日 上午9:43:24
  */
 public interface SysUserRoleService {

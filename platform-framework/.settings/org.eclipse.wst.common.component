@@ -18,6 +18,9 @@
         <dependent-module archiveName="platform-api-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/platform-api/platform-api">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/overlay/prj/platform-cms?includes=**/**&amp;excludes=META-INF/MANIFEST.MF">
+            <dependency-type>consumes</dependency-type>
+        </dependent-module>
         <dependent-module deploy-path="/" handle="module:/overlay/prj/platform-shop?includes=**/**&amp;excludes=META-INF/MANIFEST.MF">
             <dependency-type>consumes</dependency-type>
         </dependent-module>

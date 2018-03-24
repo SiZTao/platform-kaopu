@@ -21,8 +21,8 @@ import java.util.Map;
 /**
  * 数据过滤，切面处理类
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017年10月23日 下午13:33:35
  */
 @Aspect

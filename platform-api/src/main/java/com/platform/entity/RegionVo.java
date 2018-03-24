@@ -1,8 +1,8 @@
 package com.platform.entity;
 
 /**
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017-08-15 08:03:41
  */
 public class RegionVo {

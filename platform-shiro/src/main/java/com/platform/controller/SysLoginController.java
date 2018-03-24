@@ -24,8 +24,8 @@ import java.io.IOException;
 /**
  * 登录相关
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2016年11月10日 下午1:15:31
  */
 @Controller

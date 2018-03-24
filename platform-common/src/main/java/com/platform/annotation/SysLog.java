@@ -5,8 +5,8 @@ import java.lang.annotation.*;
 /**
  * 系统日志注解
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017年3月8日 上午10:19:56
  */
 @Target(ElementType.METHOD)

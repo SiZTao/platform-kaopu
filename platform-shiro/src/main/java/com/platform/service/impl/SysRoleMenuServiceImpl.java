@@ -14,8 +14,8 @@ import java.util.Map;
 /**
  * 角色与菜单对应关系
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2016年9月18日 上午9:44:35
  */
 @Service("sysRoleMenuService")

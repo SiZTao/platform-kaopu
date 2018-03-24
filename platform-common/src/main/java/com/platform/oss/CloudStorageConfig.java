@@ -13,8 +13,8 @@ import java.io.Serializable;
 /**
  * 云存储配置信息
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017-03-25 16:12
  */
 public class CloudStorageConfig implements Serializable {

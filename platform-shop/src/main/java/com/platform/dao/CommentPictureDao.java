@@ -5,8 +5,8 @@ import com.platform.entity.CommentPictureEntity;
 /**
  * 评价图片Dao
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017-08-29 14:45:55
  */
 public interface CommentPictureDao extends BaseDao<CommentPictureEntity> {

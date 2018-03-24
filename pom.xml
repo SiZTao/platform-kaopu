@@ -16,6 +16,7 @@
         <module>platform-framework</module>
         <module>platform-admin</module>
         <module>platform-shop</module>
+        <module>platform-cms</module>
     </modules>
 
     <properties>

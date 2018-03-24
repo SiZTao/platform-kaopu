@@ -13,8 +13,8 @@ import com.platform.service.AdService;
 /**
  * Service实现类
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017-08-19 09:37:35
  */
 @Service("adService")

@@ -9,8 +9,8 @@ import java.util.Map;
 /**
  * oracle代码生成器
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017年07月23日 上午13:06:04
  */
 public interface SysOracleGeneratorDao {

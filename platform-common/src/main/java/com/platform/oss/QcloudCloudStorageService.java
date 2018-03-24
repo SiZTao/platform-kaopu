@@ -16,8 +16,8 @@ import java.io.InputStream;
 /**
  * 腾讯云存储
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017-03-26 20:51
  */
 public class QcloudCloudStorageService extends CloudStorageService {

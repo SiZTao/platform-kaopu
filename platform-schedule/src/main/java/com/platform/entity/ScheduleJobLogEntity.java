@@ -6,8 +6,8 @@ import java.util.Date;
 /**
  * 定时执行日志
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2016年12月1日 下午10:26:18
  */
 public class ScheduleJobLogEntity implements Serializable {

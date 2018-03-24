@@ -8,8 +8,8 @@ import org.slf4j.LoggerFactory;
 /**
  * Controller公共组件
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2016年11月9日 下午9:42:26
  */
 public abstract class AbstractController {

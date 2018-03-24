@@ -20,8 +20,8 @@ import com.platform.utils.R;
 /**
  * 团购Controller
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017-09-06 17:18:30
  */
 @RestController

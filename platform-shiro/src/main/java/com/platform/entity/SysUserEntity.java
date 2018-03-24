@@ -12,8 +12,8 @@ import java.util.List;
 /**
  * 系统用户
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2016年9月18日 上午9:28:55
  */
 public class SysUserEntity implements Serializable {

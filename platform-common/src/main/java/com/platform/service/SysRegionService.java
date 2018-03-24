@@ -9,8 +9,8 @@ import java.util.Map;
 /**
  * Service接口
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017-11-04 11:19:31
  */
 public interface SysRegionService {

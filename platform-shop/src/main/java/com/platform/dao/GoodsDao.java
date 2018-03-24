@@ -5,8 +5,8 @@ import com.platform.entity.GoodsEntity;
 /**
  * Dao
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017-08-21 21:19:49
  */
 public interface GoodsDao extends BaseDao<GoodsEntity> {

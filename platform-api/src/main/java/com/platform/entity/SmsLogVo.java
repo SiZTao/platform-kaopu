@@ -7,8 +7,8 @@ import java.util.Date;
 /**
  * 实体表名 nideshop_sms_log
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017-08-25 10:04:52
  */
 public class SmsLogVo implements Serializable {

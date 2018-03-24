@@ -22,7 +22,7 @@ import java.util.Map;
 /**
  * Service实现类
  *
- * @author lipengjun
+ * @author 黑龙江省靠谱科技有限公司
  * @date 2017-12-16 23:38:05
  */
 @Service("smsLogService")

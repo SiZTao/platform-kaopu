@@ -7,8 +7,8 @@ import java.io.Serializable;
  * 团购实体
  * 表名 nideshop_goods_group
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017-09-06 17:18:30
  */
 public class GoodsGroupEntity implements Serializable {

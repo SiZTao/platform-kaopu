@@ -2,8 +2,8 @@ package com.platform.entity;
 
 
 /**
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017年6月18日 上午9:26:39
  */
 public class SysMenuEntity extends Tree {

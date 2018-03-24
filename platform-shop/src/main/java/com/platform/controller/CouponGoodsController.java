@@ -20,8 +20,8 @@ import com.platform.utils.R;
 /**
  * 优惠券关联商品Controller
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author 黑龙江省靠谱科技有限公司
+ * @email 
  * @date 2017-08-29 21:50:17
  */
 @RestController
